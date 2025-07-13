@@ -359,8 +359,8 @@ No more guesswork
        <div className={`${styles.gridItem} ${styles.gridItemTwo}`}>
   <div className={` 
   text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] ${styles.paragraphContainer}`}>
-  Trust <span className={styles.spanText}>isn’t</span> optional—
-  <span className={styles.spanTextSecond}> it's </span> Vital.
+  Trust isn&rsquo;t optional—<span className={styles.spanTextSecond}> it&rsquo;s </span> Vital.
+
 </div>
        </div>
  
@@ -650,12 +650,8 @@ Engage beyond the transaction. Relationships that last.
 
 
 <div className={` ${styles.footerTextContainer}`}>
-  <div className={`${styles.footerText} text-[clamp(0.75rem,1.5vw,3rem)]`}>
-           Terms of use
-    </div>
-  <div className={`${styles.footerText} text-[clamp(0.75rem,1.5vw,3rem)]`}>
-           Support
-    </div>
+  <div className={`${styles.footerText} text-[clamp(0.75rem,1.5vw,3rem)]`}>Terms of use</div>
+  <div className={`${styles.footerText} text-[clamp(0.75rem,1.5vw,3rem)]`}> Support </div>
 
      <div className={`${styles.footerText} text-[clamp(0.75rem,1.5vw,3rem)]`}>
            Company

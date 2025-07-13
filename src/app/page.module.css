@@ -298,6 +298,7 @@ position: relative; /* ✅ Required for Image fill to work correctly */
   font-weight: 700;
   text-align: center;
   justify-content: center;
+   border-bottom: 1px solid black;
 }
 
 .gridItemTwo {
@@ -312,7 +313,19 @@ position: relative; /* ✅ Required for Image fill to work correctly */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
+ 
+}
+
+.yellow{
+  color:var(--clr--yellow) !important;
+}
+
+.lastGridItem {
+   display: flex; /* or inline-block */
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+   border-bottom: 1px solid transparent !important;
 }
 
 .spanText{

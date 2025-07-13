@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 import Link from 'next/link';
 import { ChevronDown,Menu,Home as HomeIcon } from "lucide-react";
 import React,{useState} from "react";
-import { DashedCircle } from "./reusable-components/special";
+
 
 
 export default function Home() {
@@ -199,7 +199,7 @@ const handleChildClick = (e:React.MouseEvent<HTMLDivElement>) => {
                 `}>Sell with purpose</h1>
                   <div  className={`sm:w-[90%] md-w[100%] lg:w-[40%] sm:leading[10px] md:leading[20px] lg:leading[40px]   ${styles.pitchCover}`}>
                 <p className={`${styles.pitchParagraph}   text-[12px] sm:text-[1.5vw] md:text-[1.5vw] lg:text-[1.0vw]`}>
-                  A Marketplace for <strong> Muslim women.</strong>  Because finding what you love and selling what you believe in shouldn’t be a gamble. 
+                  A Marketplace for <strong> Muslim women.</strong> Because finding what you love and selling what you believe in shouldn&#39;t be a gamble.
                 </p>
                   </div>
 

@@ -431,11 +431,11 @@ No more guesswork
       
       >
 
-        <div className={`${styles.gridItem} ${styles.gridItemOne}`} > </div>
-          <div className={`${styles.gridItem} ${styles.gridItemTwo}`} > </div>
+        <div className={` ${styles.gridItemOne}${styles.lastGridItem}`} > </div>
+          <div className={`${styles.lastGridItem} ${styles.gridItemTwo}`} > </div>
 
-          <div className={`${styles.gridItem} ${styles.gridItemThree}`} > </div>
-            <div className={`${styles.gridItem} ${styles.gridItemFour}`} > </div>
+          <div className={`${styles.lastGridItem} ${styles.gridItemThree}`} > </div>
+            <div className={`${styles.lastGridItem} ${styles.gridItemFour}`} > </div>
 
       </div>
 
@@ -570,8 +570,8 @@ No more guesswork
        
 
   <div  style={{color:'#9747FF'}} className={styles.firstLetter}>
- <div>
-           Built for connection,
+ <div >
+           Built for <span className={styles.yellow}>connection,</span> 
         </div>
         <div>
          not just conversion.

@@ -8,8 +8,13 @@ import React,{useState} from "react";
 
 
 
-export default function Home() {
 
+
+
+
+
+
+  const Home =()=>{
 const [isModalShown,setIsModalShown]=useState<boolean>(false)
 
  const handleParentPress = () => {
@@ -21,12 +26,13 @@ const handleChildClick = (e:React.MouseEvent<HTMLDivElement>) => {
     console.log('Special child clicked!');
   };
 
-  return (
-   <>
-  <main className={styles.pageContainer}>
 
 
- <header className={styles.smallLinkheader}>
+    return(
+      <>
+      
+ <main className={styles.pageContainer}>
+<header className={styles.smallLinkheader}>
 
       <Menu className="w-6 h-6"   onClick={()=>setIsModalShown(true)}/>
        <div
@@ -34,9 +40,6 @@ const handleChildClick = (e:React.MouseEvent<HTMLDivElement>) => {
        >Nadra</div>
 
     </header>
-
-
-
 {
   isModalShown && (
     <>
@@ -97,13 +100,7 @@ const handleChildClick = (e:React.MouseEvent<HTMLDivElement>) => {
   )
 }
 
-
-
-
-
-
-
-    <section className={styles.firstSection}>
+ <section className={styles.firstSection}>
 
     <header className={`${styles.linkHeader} h-12
             sm:h-16
@@ -339,7 +336,8 @@ No more guesswork
         >Why Nadra?</h1>
 
     </section >
-    <section  className={styles.secondSection}>
+
+ <section  className={styles.secondSection}>
 
       <div
 
@@ -587,10 +585,6 @@ No more guesswork
 
     </section>
 
-
-
-
-
 <section className={styles.thirdSection}>
   <h1 
         
@@ -632,8 +626,6 @@ Engage beyond the transaction. Relationships that last.
 
 
 </section>
-
-
 <footer className={`${styles.footerContainer} w-[100%]
 
  h-[200px]              
@@ -749,11 +741,17 @@ Engage beyond the transaction. Relationships that last.
 
 </footer>
 
-  </main>
+
+ </main>
+
+      </>
+    )
+  }
+
+
+
+export default Home
 
 
    
    
-   </>
-  );
-}

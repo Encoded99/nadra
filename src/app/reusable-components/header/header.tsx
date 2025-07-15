@@ -133,7 +133,7 @@ const handleChildClick = (e:React.MouseEvent<HTMLDivElement>) => {
    <div className={` ${styles.toggleLinkContainerContent}`}>
 
     {
-        linkData.map((item,index)=>{
+        linkData.map((item,)=>{
           return (
             <>
               <Link href={item.link} className={styles.smallLink}>

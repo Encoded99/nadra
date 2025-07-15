@@ -5,7 +5,7 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import { ChevronDown,Check } from 'lucide-react'
 
-function page() {
+function Page() {
 
 const [instance,setInstance]=useState<'monthly'|'yearly'>('monthly')
 
@@ -443,4 +443,4 @@ Are you ready to take your business to the next level with Nadra?
   )
 }
 
-export default page
+export default Page

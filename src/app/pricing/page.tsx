@@ -274,7 +274,7 @@ Are you ready to take your business to the next level with Nadra?
  <div className={`${styles.pricingContainer}`}>
   
   {
-    pricingData.map((item,index)=>{
+    pricingData.map((item)=>{
       return (
         <>
         
@@ -292,7 +292,7 @@ Are you ready to take your business to the next level with Nadra?
 
 
     {
-      item.features.map((feature,index)=>{
+      item.features.map((feature)=>{
         return(
           <>
           <div className='w-[100%]  !my-auto flex-row  flex '>
@@ -387,7 +387,7 @@ Are you ready to take your business to the next level with Nadra?
  <div className={`${styles.extraPricingContainer}`}>
   
   {
-    extraPricingData.map((item,index)=>{
+    extraPricingData.map((item)=>{
       return (
         <>
         
@@ -405,7 +405,7 @@ Are you ready to take your business to the next level with Nadra?
 
 
     {
-      item.features.map((feature,index)=>{
+      item.features.map((feature)=>{
         return(
           <>
           <div className='w-[100%]  !my-auto flex-row  flex '>

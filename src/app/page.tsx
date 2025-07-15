@@ -146,7 +146,7 @@ type LinkType={
 
 
     {
-      linkData.map((item,index)=>{
+      linkData.map((item,)=>{
         return (
           <>
               <Link key={item._id} href={item.link} className={styles.smallLink}>
@@ -185,7 +185,7 @@ type LinkType={
 
 
             {
-      linkData.slice(0,3).map((item,index)=>{
+      linkData.slice(0,3).map((item,)=>{
         return (
           <>
               <Link key={item._id} href={item.link} className={styles.link}>
@@ -209,7 +209,7 @@ type LinkType={
  <div className={styles.rightLink}>
 
         {
-      linkData.slice(3,7).map((item,index)=>{
+      linkData.slice(3,7).map((item,)=>{
         return (
           <>
               <Link key={item._id} href={item.link} className={styles.link}>

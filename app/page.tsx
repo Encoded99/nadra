@@ -284,16 +284,15 @@ const handlePress=()=>{
     <h1 
         
          className={`${styles.pitchTitle }
-            text-[24px] sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw]
-                `}
+            text-[24px] md:text-[40px] lg:text-[50px]`}
         
         >Shop with confidence</h1>
                 <h1 className={`${styles.pitchTitle }
-               text-[24px] sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw]
+                text-[24px] md:text-[40px] lg:text-[50px]
                 
                 `}>Sell with purpose</h1>
-                  <div  className={`sm:w-[90%] md-w[100%] lg:w-[40%] sm:leading[10px] md:leading[20px] lg:leading[40px]   ${styles.pitchCover}`}>
-                <p className={`${styles.pitchParagraph}   text-[12px] sm:text-[1.5vw] md:text-[1.5vw] lg:text-[1.0vw]`}>
+                  <div  className={`sm:w-[90%] md-w[100%] lg:w-[70%] sm:leading[10px] md:leading[20px] lg:leading[40px]   ${styles.pitchCover}`}>
+                <p className={`${styles.pitchParagraph}    text-[15px] md:text-[15px] lg:text-[15px]`}>
                   A Marketplace for <strong> Muslim women.</strong> Because finding what you love and selling what you believe in shouldn&#39;t be a gamble.
                 </p>
                   </div>

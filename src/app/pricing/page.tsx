@@ -375,7 +375,7 @@ const mappedPrice:number = parseFloat((item.price * multiplier).toFixed(1));
   
    <div
   style={{ backgroundColor: '#553448D9' }}
-  className='w-full text-white flex justify-center items-center h-[10%] text-center'
+  className='w-full text-white flex justify-center items-center h-[13%] text-center'
 >
   {currency.unicode}
   <span className='line-through'>
@@ -410,8 +410,8 @@ const mappedPrice:number = parseFloat((item.price * multiplier).toFixed(1));
    
   </div>
  
- <div className=' !pb-[4%] w-[100%] h-[15%] '>
-<div className={`flex justify-center w-[70%] !mx-auto !px-[5px] h-[100%] items-center  rounded-lg  ${styles.subBtn}`}>
+ <div className=' !pb-[4%] w-[100%] h-[12%] '>
+<div className={`flex justify-center w-[70%] !mx-auto !px-[5px] h-[100%] items-center  rounded-[20px]  ${styles.subBtn}`}>
 
 
   {item.title==='Premium'?'Contact Sales':"Subscribe"}
@@ -528,7 +528,7 @@ const mappedPrice:number = parseFloat((item.price * multiplier).toFixed(1));
       <strong className='!ml-[5px] text-lg'> {item.price} / item</strong>
   </div>
 
-  <div className='w-[100%] !px-[4%] !py-[5%]  flex-col  flex justify-start items-start h-[40%]'>
+  <div className='w-[100%] !px-[4%] !py-[5%]  flex-col  flex justify-start items-start h-[60%]'>
 
 
     {

@@ -57,12 +57,17 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
     data: rates = {},
     isLoading,
     isError,
+    error,
   } = useQuery<RatesType>({
     queryKey: ['exchange'],
     queryFn: checkConversion,
     staleTime: 1000 * 60 * 60, // 1 hour cache
 
   })
+
+
+
+  console.error('Exchange rate fetch error:', error);
 
 
   return (

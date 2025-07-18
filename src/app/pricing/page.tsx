@@ -358,8 +358,8 @@ Are you ready to take your business to the next level with Nadra?
   {
     pricingData.map((item)=>{
 
-const mappedPrice:number = parseFloat((item.price * multiplier).toFixed(1));
- const mappedPreviousPrice=parseFloat((item.previousPrice * multiplier).toFixed(1));
+const mappedPrice:number = parseFloat((item.price * multiplier).toFixed(0));
+ const mappedPreviousPrice=parseFloat((item.previousPrice * multiplier).toFixed(0));
 
       return (
         <>
@@ -380,13 +380,13 @@ const mappedPrice:number = parseFloat((item.price * multiplier).toFixed(1));
   {currency.unicode}
   <span className='line-through'>
     {instance === 'monthly'
-      ? Number(mappedPreviousPrice).toFixed(2)
-      : Number(mappedPreviousPrice * 12).toFixed(2)}
+      ? Number(mappedPreviousPrice).toFixed(0)
+      : Number(mappedPreviousPrice * 12).toFixed(0)}
   </span>
   <strong className='!ml-[5px] text-lg'>
     {instance === 'monthly'
-      ? Number(mappedPrice).toFixed(2)
-      : Number(mappedPrice * 12 * 0.85).toFixed(2)}{' '}
+      ? Number(mappedPrice).toFixed(0)
+      : Number(mappedPrice * 12 * 0.85).toFixed(0)}{' '}
     {instance === 'monthly' ? '/ month' : '/ year'}
   </strong>
 </div>

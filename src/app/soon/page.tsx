@@ -37,7 +37,7 @@ function ComingSoonPage() {
         
 
         <h1 className='text-4xl md:text-6xl font-bold text-black text-center'>Coming Soon</h1>
-        <p className='text-lg md:text-2xl font-bold !my-8 text-black text-center'>Our website is under contruction</p>
+        <p className='text-lg md:text-2xl font-bold !my-8 text-black text-center'>Our website is under construction</p>
 
         <div className='flex-col sm:flex-row flex items-center w-[100%] justify-center'>
 

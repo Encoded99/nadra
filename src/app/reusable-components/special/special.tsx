@@ -179,7 +179,7 @@ setIsLoading(true)
       console.log(response, 'response from this');
 
       if (response.status === 'successful') {
-        console.log('sucessfulluuu')
+       
         setTransactionId(response.transaction_id)
         await ConfirmTransaction(response.transaction_id);
       }
@@ -348,7 +348,7 @@ setIsLoading(true)
                            <p  style={{color:'grey'}} className=' text-md !mb-auto font-bold'> <span style={{color:'#CD4E5E'}}>Plan:</span> {subData.name} </p>
                         </div>
                         <div className='text-start w-[100%]'>
-                           <p  style={{color:'grey'}} className=' text-md !mb-auto font-bold'> <span style={{color:'#CD4E5E'}}>Duration:</span> {subData.instance} </p>
+                           <p  style={{color:'grey'}} className=' text-md !mb-auto font-bold'> <span style={{color:'#CD4E5E'}}>Duration:</span> {subData.instance[0].toUpperCase()}{subData.instance.slice(1,subData.instance.length).toLowerCase()} </p>
                         </div>
                         <div className='text-start w-[100%]'>
                            <p  style={{color:'grey'}} className=' text-md !mb-auto font-bold'> <span style={{color:'#CD4E5E'}}>Amount:</span> {unicode}{amount.toLocaleString()} </p>

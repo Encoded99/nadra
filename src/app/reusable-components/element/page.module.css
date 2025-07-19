@@ -1,0 +1,9 @@
+.submitBtn{
+   border-radius: 16px;
+   padding: 0 2%;
+   background-color:var(--clr--secondary-2);
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

@@ -259,12 +259,15 @@ if(!rates.GBP)return
  const params=currency.symbol
  switch (params) {
   case 'GBP':
+    setUnicode('£')
     setMultiplier(rates?.GBP);
     break;
   case 'NGN':
+     setUnicode('₦')
     setMultiplier(rates?.NGN);
     break;
   default:
+     setUnicode('$')
     setMultiplier(1);
 }
 
@@ -278,6 +281,7 @@ const handleClick=(params:PriceType)=>{
   const finalAmount= params.price*multiplier
   setAmount(finalAmount)
   setSelectedSub(params.title)
+  
   setIsModalShown(true)
 
 }
